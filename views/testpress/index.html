@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quizstyle.css">
+  <link rel="stylesheet" href="stylequiz.css" />
+</head>
+
+  <body>
+    <div class="container">
+      <div id="quiz" class="justify-center flex-column">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+              Question
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Score
+            </p>
+            <h1 class="hud-main-text" id="score">
+              0
+            </h1>
+            <p class="hud-prefix">
+              Time
+            </p>
+            <h1><label id="minutes" class="hud-main-text">00</label>:<label  id="seconds" class="hud-main-text">00</label></h1>
+          </div>
+        </div>
+        <h2 id="question">loading</h2>
+        <div class="choice-container">
+          <p class="choice-prefix">1</p>
+          <p class="choice-text" data-number="1">loading</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">2</p>
+          <p class="choice-text" data-number="2">loading</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">3</p>
+          <p class="choice-text" data-number="3">loading</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">4</p>
+          <p class="choice-text" data-number="4">loading</p>
+        </div>
+      </div>
+    </div>
+    <script src="testpressq.js"></script>
+  </body>
+</html>
